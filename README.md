@@ -101,6 +101,7 @@ prism-dep-doctor/
 │   └── depdoc.test.js
 ├── .gitignore
 ├── LICENSE
+├── README.md
 └── package.json
 ```
 

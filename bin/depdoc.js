@@ -46,7 +46,7 @@ const root = path.resolve(a.positionals[0] || ".");
 
   console.log(header("depdoc", `${r.pkg.name || path.basename(root)}${r.pkg.version ? "@" + r.pkg.version : ""}`));
   console.log(c.dim(`${plural(r.counts.dependencies, "dependency", "dependencies")} · ${plural(r.counts.devDependencies, "devDependency", "devDependencies")} · ${plural(r.counts.files, "source file")} · ${r.counts.imported} packages imported`));
-  const ICON = { error: c.red("✖"), warn: c.yellow("⚠"), info: c.cyan("ℹ") };
+  const ICON = { error: c.red("✖"), warn: c.yellow("⚠"), info: c.cyan("i") };
   const COL = { error: c.red, warn: c.yellow, info: c.cyan };
   const order = { error: 0, warn: 1, info: 2 };
   if (!r.issues.length) console.log(`\n${c.green("✔")} Healthy. No dependency problems found.`);
